@@ -1,0 +1,34 @@
+{
+  "name": "mahesh_portfolio",
+  "version": "1.0.0",
+  "description": "This is my Portfolio Website",
+  "default": "./src/index.html",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maheshkannankr/Mahesh_Portfolio.git"
+  },
+  "keywords": [
+    "Mahesh",
+    "Kannan",
+    "portfolio"
+  ],
+  "author": "Mahesh Kannan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maheshkannankr/Mahesh_Portfolio/issues"
+  },
+  "homepage": "https://github.com/maheshkannankr/Mahesh_Portfolio#readme",
+  "devDependencies": {
+    "parcel": "^2.13.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
