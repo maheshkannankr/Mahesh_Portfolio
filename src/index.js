@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-
-
-const heading = <h1>Mahesh Kannan</h1>;
+import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(heading);
+root.render(<App />);
