@@ -1,4 +1,85 @@
+/* 
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485 */
 header {
-  background-color: antiquewhite;
   height: 95vh;
+  position: relative;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(126, 213, 111, 0.8),
+      rgb(40, 180, 133, 0.8)
+    ),
+    url('../../assets/images/hero.jpg');
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+}
+
+.h_logo_container {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.h_logo_img {
+  height: 35px;
+}
+
+.h_heading_container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.h_primary_heading_text {
+  font-weight: 400;
+  font-size: 60px;
+  letter-spacing: 30px;
+  padding-left: 30px;
+  animation: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.295, 1.18, 0, 0.39);
+}
+.h_secondary_heading_text {
+  font-weight: 700;
+  padding-left: 13.8px;
+  font-size: 20px;
+  letter-spacing: 13.8px;
+  animation: moveInRight;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.295, 1.18, 0, 0.39);
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  90% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  90% {
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
