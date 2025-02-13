@@ -9,6 +9,7 @@ const Header = () => {
       <div className='h_heading_container'>
         <h1 className='h_primary_heading_text'>{'outdoors'}</h1>
         <h1 className='h_secondary_heading_text'>{'is where life happens'}</h1>
+        <label className='h_button_text'>{'Discover our tours'}</label>
       </div>
     </header>
   );
