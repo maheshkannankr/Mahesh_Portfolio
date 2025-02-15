@@ -2,13 +2,16 @@
 Light green: #7ed56f
 Medium green: #55c57a
 Dark green: #28b485 */
+
+@import '../../app.scss';
+
 header {
   height: 95vh;
   position: relative;
   background-image: linear-gradient(
       to right bottom,
-      rgba(126, 213, 111, 0.8),
-      rgb(40, 180, 133, 0.8)
+      rgba($color_primary, 0.8),
+      rgba($color_teritary, 0.8)
     ),
     url('../../assets/images/hero.jpg');
   background-size: cover;
@@ -34,7 +37,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #fff;
+  color: $color_white;
   text-transform: uppercase;
   gap: 1rem;
 }
@@ -96,7 +99,7 @@ header {
 }
 
 .h_button_text {
-  color: #777;
+  color: $color_grey_dark;
   font-size: 2rem;
   margin-top: 8rem;
   font-weight: 500;
@@ -105,7 +108,7 @@ header {
   border-radius: 5rem;
   transition: all 0.1s;
   display: inline-block;
-  background-color: #fff;
+  background-color: $color_white;
   text-transform: uppercase;
   position: relative;
   cursor: pointer;
@@ -115,7 +118,7 @@ header {
 
 .h_button_text:hover {
   transform: translateY(-0.3rem);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1rem 2rem rgba($color_black, 0.2);
 }
 .h_button_text:active {
   transform: translateY(-0.1rem);
@@ -131,7 +134,7 @@ header {
   top: 0;
   left: 0;
   z-index: -1;
-  background-color: #fff;
+  background-color: $color_white;
   transition: all 0.5s;
 }
 

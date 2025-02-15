@@ -1,4 +1,4 @@
-import './index.css';
+import './index.scss';
 import logo from '../../assets/images/logo-white.png';
 const Header = () => {
   return (
