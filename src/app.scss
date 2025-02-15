@@ -1,0 +1,38 @@
+/*
+COLORS:
+
+Light green: 
+Medium green: 
+Dark green: 
+
+*/
+
+// Colors
+$color_primary: #7ed56f;
+$color_secondary: #55c57a;
+$color_teritary: #28b485;
+$color_grey_dark: #777;
+$color_white: #fff;
+$color_black: #000;
+
+*,
+*::after,
+*::before {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: $color_grey_dark;
+  padding: 3rem;
+  box-sizing: border-box;
+  font-weight: 400;
+  line-height: 1.7;
+  font-family: 'Titillium Web', serif;
+}
