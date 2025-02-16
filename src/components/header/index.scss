@@ -3,64 +3,105 @@ Light green: #7ed56f
 Medium green: #55c57a
 Dark green: #28b485 */
 
-@import '../../app.scss';
+@use '../../app.scss' as *;
 
-header {
+.header {
   height: 95vh;
   position: relative;
   background-image: linear-gradient(
       to right bottom,
       rgba($color_primary, 0.8),
-      rgba($color_teritary, 0.8),
+      rgba($color_teritary, 0.8)
     ),
     url('../../assets/images/hero.jpg');
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
-}
+  background-color: $color_black;
 
-.h_logo_container {
-  position: absolute;
-  top: 4rem;
-  left: 4rem;
-}
+  &_logo {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
 
-.h_logo_img {
-  height: 3.5rem;
-}
+    &_img {
+      height: 3.5rem;
+    }
+  }
 
-.h_heading_container {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: $color_white;
-  text-transform: uppercase;
-  gap: 1rem;
-}
+  &_heading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $color_white;
+    text-transform: uppercase;
+    gap: 1rem;
 
-.h_primary_heading_text {
-  font-weight: 600;
-  font-size: 6rem;
-  letter-spacing: 3rem;
-  padding-left: 3rem;
-  animation: moveInLeft;
-  animation-duration: 0.5s;
-  animation-timing-function: cubic-bezier(0.6, 1.65, 0.68, 0.435);
+    &_primary_text {
+      font-weight: 600;
+      font-size: 6rem;
+      letter-spacing: 3rem;
+      padding-left: 3rem;
+      animation: moveInLeft;
+      animation-duration: 0.5s;
+      animation-timing-function: cubic-bezier(0.6, 1.65, 0.68, 0.435);
+    }
+    &_secondary_text {
+      font-weight: 700;
+      padding-left: 1.38rem;
+      font-size: 2rem;
+      letter-spacing: 1.38rem;
+      animation: moveInRight;
+      animation-duration: 0.5s;
+      animation-timing-function: cubic-bezier(0.6, 1.65, 0.68, 0.435);
+    }
+    &_button_text {
+      color: $color_grey_dark;
+      font-size: 2rem;
+      margin-top: 8rem;
+      font-weight: 500;
+      letter-spacing: 0.2rem;
+      padding: 1rem 4rem;
+      border-radius: 5rem;
+      transition: all 0.1s;
+      display: inline-block;
+      background-color: $color_white;
+      text-transform: uppercase;
+      position: relative;
+      cursor: pointer;
+      animation: moveUp 0.5s ease-in-out 0.75s;
+      animation-fill-mode: backwards;
+      &::after {
+        content: '';
+        height: 100%;
+        width: 100%;
+        display: inline-block;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background-color: $color_white;
+        transition: all 0.5s;
+      }
+      &:hover {
+        transform: translateY(-0.3rem);
+        box-shadow: 0 1rem 2rem rgba($color_black, 0.2);
+        &::after {
+          transform: scaleX(1.4) scaleY(1.6);
+          opacity: 0;
+        }
+      }
+      &:active {
+        transform: translateY(-0.1rem);
+      }
+    }
+  }
 }
-.h_secondary_heading_text {
-  font-weight: 700;
-  padding-left: 1.38rem;
-  font-size: 2rem;
-  letter-spacing: 1.38rem;
-  animation: moveInRight;
-  animation-duration: 0.5s;
-  animation-timing-function: cubic-bezier(0.6, 1.65, 0.68, 0.435);
-}
-
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -96,49 +137,4 @@ header {
   100% {
     opacity: 1;
   }
-}
-
-.h_button_text {
-  color: $color_grey_dark;
-  font-size: 2rem;
-  margin-top: 8rem;
-  font-weight: 500;
-  letter-spacing: 0.2rem;
-  padding: 1rem 4rem;
-  border-radius: 5rem;
-  transition: all 0.1s;
-  display: inline-block;
-  background-color: $color_white;
-  text-transform: uppercase;
-  position: relative;
-  cursor: pointer;
-  animation: moveUp 0.5s ease-in-out 0.75s;
-  animation-fill-mode: backwards;
-}
-
-.h_button_text:hover {
-  transform: translateY(-0.3rem);
-  box-shadow: 0 1rem 2rem rgba($color_black, 0.2);
-}
-.h_button_text:active {
-  transform: translateY(-0.1rem);
-}
-
-.h_button_text::after {
-  content: '';
-  height: 100%;
-  width: 100%;
-  display: inline-block;
-  border-radius: 10rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  background-color: $color_white;
-  transition: all 0.5s;
-}
-
-.h_button_text:hover::after {
-  transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0;
 }
