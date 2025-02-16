@@ -2,14 +2,14 @@ import './index.scss';
 import logo from '../../assets/images/logo-white.png';
 const Header = () => {
   return (
-    <header>
-      <div className='h_logo_container'>
-        <img src={logo} alt='Logo' className='h_logo_img' />
+    <header className='header'>
+      <div className='header_logo'>
+        <img src={logo} alt='Logo' className='header_logo_img' />
       </div>
-      <div className='h_heading_container'>
-        <h1 className='h_primary_heading_text'>{'outdoors'}</h1>
-        <h1 className='h_secondary_heading_text'>{'is where life happens'}</h1>
-        <label className='h_button_text'>{'Discover our tours'}</label>
+      <div className='header_heading'>
+        <h1 className='header_heading_primary_text'>{'outdoors'}</h1>
+        <h1 className='header_heading_secondary_text'>{'is where life happens'}</h1>
+        <label className='header_heading_button_text'>{'Discover our tours'}</label>
       </div>
     </header>
   );
