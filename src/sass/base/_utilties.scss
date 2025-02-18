@@ -1,0 +1,25 @@
+@use './base' as *;
+
+.u_secondary_heading {
+  font-size: 3.5rem;
+  text-align: center;
+  font-weight: 600;
+  display: inline-block;
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, $color_primary, $color_teritary);
+  color: transparent;
+  -webkit-background-clip: text;
+  letter-spacing: 0.2rem;
+  transition: all 1s;
+  &:hover {
+    transform: skewX(20deg) skewY(2deg);
+    text-shadow: 0.5rem 1rem 2rem rgba($color_grey_dark, 0.5);
+  }
+}
+
+.u_tertiary_heading {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0;
+}
