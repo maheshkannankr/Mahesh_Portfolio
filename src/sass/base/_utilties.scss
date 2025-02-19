@@ -12,7 +12,7 @@
   letter-spacing: 0.2rem;
   transition: all 1s;
   &:hover {
-    transform: skewX(20deg) skewY(2deg);
+    transform: skewX(20deg);
     text-shadow: 0.5rem 1rem 2rem rgba($color_grey_dark, 0.5);
   }
 }
@@ -22,4 +22,22 @@
   font-weight: 600;
   text-transform: uppercase;
   margin: 0;
+}
+
+.u_content_para_text {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: justify;
+}
+
+.u_flex_column {
+  display: flex;
+  flex-direction: column;
+}
+
+.u_fill_over_button {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: $color_teritary;
 }
