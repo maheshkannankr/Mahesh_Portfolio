@@ -32,13 +32,7 @@
   }
 }
 
-.learn_more {
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
-  color: $color_teritary;
-  &::before {
-    content: '';
-    border-bottom: 1px solid $color_teritary;
-  }
+.about_learn_more {
+display: inline;
+width: fit-content;
 }

@@ -1,6 +1,4 @@
 import './index.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight } from '@fortawesome/fontawesome-free-solid';
 const About = () => {
   const contentHeadingPara = ({ heading }) => {
     return (
@@ -29,10 +27,10 @@ const About = () => {
           {contentHeadingPara({
             heading: 'Live Adventures you have never before',
           })}
-          <div className='learn_more'>
-            <label className='u_fill_over_button'>{'Learn More'}</label>
-            <FontAwesomeIcon icon={faArrowRight} />
-          </div>
+
+          <a href='#' className='u_fill_over_button about_learn_more'>
+            {'Learn More '}&rarr;
+          </a>
         </div>
         <div className='about_content_right'>Kanna</div>
       </div>
