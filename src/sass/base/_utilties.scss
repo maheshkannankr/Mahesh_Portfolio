@@ -37,7 +37,24 @@
 }
 
 .u_fill_over_button {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: $color_teritary;
+  &:link,
+  &:visited {
+    padding: 0.3rem 1rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: $color_teritary;
+    text-decoration: none;
+    border-bottom: 1px solid $color_primary;
+    transition: all 0.5s;
+  }
+  &:hover {
+    background-color: $color_primary;
+    color: $color_white;
+    box-shadow: 0 1rem 2rem rgba($color_primary, 0.5);
+    transform: translateY(-1rem);
+  }
+  &:active {
+    box-shadow: 0 0.5rem 1rem rgba($color_primary, 0.5);
+    transform: translateY(-0.5rem);
+  }
 }
