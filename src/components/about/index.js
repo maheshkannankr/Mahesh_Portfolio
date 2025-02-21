@@ -1,4 +1,7 @@
 import './index.scss';
+import img1 from '../../assets/images/nat-1-large.jpg';
+import img2 from '../../assets/images/nat-2-large.jpg';
+import img3 from '../../assets/images/nat-3-large.jpg';
 const About = () => {
   const contentHeadingPara = ({ heading }) => {
     return (
@@ -10,6 +13,30 @@ const About = () => {
           since the 1500s, when an unknown printer took a galley of type and
           scrambled it to make a type specimen book.
         </p>
+      </div>
+    );
+  };
+
+  const aboutRightContent = () => {
+    return (
+      <div className='about_content_right'>
+        <div className='about_content_right_main'>
+          <img
+            src={img1}
+            alt='Photo 1'
+            className='about_content_right_main_img about_content_right_main_img1'
+          />
+          <img
+            src={img2}
+            alt='Photo 2'
+            className='about_content_right_main_img about_content_right_main_img2'
+          />
+          <img
+            src={img3}
+            alt='Photo 3'
+            className='about_content_right_main_img about_content_right_main_img3'
+          />
+        </div>
       </div>
     );
   };
@@ -32,7 +59,7 @@ const About = () => {
             {'Learn More '}&rarr;
           </a>
         </div>
-        <div className='about_content_right'>Kanna</div>
+        <div className='about_content_right'>{aboutRightContent()}</div>
       </div>
     </section>
   );
