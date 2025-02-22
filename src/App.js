@@ -1,13 +1,14 @@
 import React from 'react';
 import './app.scss';
 
-import { About, Header } from './components';
+import { About, Header, Feature } from './components';
 
 const App = () => {
   return (
     <body>
       <Header />
       <About />
+      <Feature />
     </body>
   );
 };

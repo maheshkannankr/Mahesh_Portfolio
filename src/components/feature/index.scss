@@ -1,0 +1,22 @@
+@use '../../app.scss' as *;
+.feature {
+  margin-top: -10rem;
+  //   padding: 20rem 0;
+  height: 95vh;
+  position: relative;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color_primary, 0.8),
+      rgba($color_teritary, 0.8)
+    ),
+    url('../../assets/images/nat-4.jpg');
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);
+  &_main {
+    flex: 1;
+    // background-color: blueviolet;
+    padding: 25rem 0;
+  }
+}
