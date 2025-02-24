@@ -35,8 +35,8 @@
       background-color: rgba($color_white, 0.8);
       transition: all 1s cubic-bezier(0.25, 1, 0.5, 1);
       &:hover {
+        animation: wiggle 1s ease forwards;
         filter: saturate(1);
-        transform: rotateZ(-0.02turn) scale(1.05);
         box-shadow: -2rem 4rem 5rem rgba($color_black, 0.3);
       }
       &_heading {
@@ -52,5 +52,17 @@
         font-size: 1.6rem;
       }
     }
+  }
+}
+
+@keyframes wiggle {
+  25% {
+    transform: rotateZ(0.01turn);
+  }
+  75% {
+    transform: rotateZ(-0.01turn) scale(1.05);
+  }
+  100% {
+    transform: scale(1.1);
   }
 }
