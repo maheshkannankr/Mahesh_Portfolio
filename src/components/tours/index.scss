@@ -1,0 +1,11 @@
+@use '../../app.scss' as *;
+.tours {
+  height: 90vh;
+  padding: 25rem;
+  margin-top: -9rem;
+  background-color: $color_grey_light1;
+  // background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

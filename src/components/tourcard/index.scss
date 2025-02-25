@@ -1,0 +1,61 @@
+@use '../../app.scss' as *;
+
+.tour_card {
+  height: fit-content;
+  width: 100%;
+  perspective: 150rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &_side {
+    background-color: $color_primary;
+    position: absolute;
+    height: 50rem;
+    width: 30rem;
+    color: $color_grey_light1;
+    transition: all 1.5s ease;
+    backface-visibility: hidden;
+    box-shadow: 0 2rem 4rem rgba($color_grey_dark, 0.4);
+    display: flex;
+    flex-direction: column;
+    &_img {
+      flex: 1;
+      background-color: $color_grey_dark;
+    }
+    &_details {
+
+        flex: 1;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        background-color: $color_primary;
+        &_label{
+            flex: 1;
+            font-size: 1.6rem;
+            text-align: center;
+        }
+    }
+
+    &-front {
+      color: #000;
+      background-color: $color_white;
+    }
+
+    &-back {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color_primary, 0.8),
+        rgba($color_teritary, 0.8)
+      );
+      transform: rotateY(180deg);
+    }
+  }
+  &:hover &_side-front {
+    transform: rotateY(180deg);
+  }
+  &:hover &_side-back {
+    transform: rotateY(360deg);
+  }
+}
