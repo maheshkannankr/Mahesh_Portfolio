@@ -2,10 +2,10 @@
 .feature {
   //   padding: 20rem 0;
   height: 95vh;
-  margin-top: -10rem;
+  margin-top: -9rem;
   position: relative;
   background-image: linear-gradient(
-      to right bottom,
+      to right top,
       rgba($color_primary, 0.8),
       rgba($color_teritary, 0.8)
     ),
@@ -13,7 +13,7 @@
   background-size: cover;
   background-position: top;
   display: flex;
-  transform: skewY(-6deg);
+  transform: skewY(-5deg);
 
   &_main {
     flex: 1;
@@ -21,8 +21,10 @@
     padding: 25rem 0;
     display: flex;
     justify-content: center;
-    transform: skewY(6deg);
+    transform: skewY(5deg);
     &_card {
+      min-height: 30rem;
+      max-height: 40rem;
       margin: 2rem;
       padding: 2rem;
       display: flex;
@@ -33,7 +35,7 @@
       filter: saturate(0);
       justify-content: space-evenly;
       background-color: rgba($color_white, 0.8);
-      transition: all 1s cubic-bezier(0.25, 1, 0.5, 1);
+      transition: all 1s;
       &:hover {
         animation: wiggle 1s ease forwards;
         filter: saturate(1);
