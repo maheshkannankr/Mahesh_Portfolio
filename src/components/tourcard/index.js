@@ -12,16 +12,24 @@ const TourCard = ({
   price = 0,
   primaryColor = '',
   secondaryColor = '',
+  bgImage = '',
+  imgGradientPrimary = '',
+  imgGradientSecondary = '',
 }) => {
-  console.log(primaryColor);
+  console.log(bgImage);
   return (
     <div className='tour_card'>
       <div className='tour_card_side tour_card_side-front'>
-        <div className='tour_card_side_img'>
+        <div
+          className='tour_card_side_img'
+          style={{
+            backgroundImage: `linear-gradient(to right bottom,${imgGradientPrimary}, ${imgGradientSecondary}), url(${bgImage})`,
+          }}
+        >
           <h1
             className='tour_card_side_img_title1'
             style={{
-              backgroundImage: `linear-gradient(to right bottom, var(${primaryColor}), var(${secondaryColor}))`,
+              backgroundImage: `linear-gradient(to right bottom,${primaryColor}, ${secondaryColor})`,
             }}
           >
             {title1}
@@ -29,7 +37,7 @@ const TourCard = ({
           <h1
             className='tour_card_side_img_title2'
             style={{
-              backgroundImage: `linear-gradient(to right bottom, var(${primaryColor}), var(${secondaryColor}))`,
+              backgroundImage: `linear-gradient(to right bottom, ${primaryColor}, ${secondaryColor})`,
             }}
           >
             {title2}
@@ -43,7 +51,12 @@ const TourCard = ({
           <label className='tour_card_side_details_label'>{`Difficulty: ${difficulty}`}</label>
         </div>
       </div>
-      <div className='tour_card_side tour_card_side_back'>
+      <div
+        className='tour_card_side tour_card_side_back'
+        style={{
+          backgroundImage: `linear-gradient(to right bottom,${primaryColor}, ${secondaryColor})`,
+        }}
+      >
         <div className='tour_card_side_back_price'>
           <span className='tour_card_side_back_price_only_text'>Only</span>
           <span className='tour_card_side_back_price_text'>{`$ ${price}`}</span>

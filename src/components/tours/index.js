@@ -1,5 +1,8 @@
 import './index.scss';
 import TourCard from '../tourcard';
+import Nat5 from '../../assets/images/nat-5.jpg';
+import Nat6 from '../../assets/images/nat-6.jpg';
+import Nat7 from '../../assets/images/nat-7.jpg';
 
 const Tours = () => {
   return (
@@ -13,8 +16,11 @@ const Tours = () => {
         title1='the sea '
         title2='explorer'
         price={497}
-        primaryColor='$color_blue_light'
-        secondaryColor='$color_blue_dark'
+        bgImage={Nat5}
+        imgGradientPrimary='#ffb90080'
+        imgGradientSecondary='#ff773080'
+        primaryColor='#ffb900'
+        secondaryColor='#ff7730'
       />
       <TourCard
         days={7}
@@ -25,8 +31,11 @@ const Tours = () => {
         title1='the forest '
         title2='hiker'
         price={697}
-        primaryColor='rgb(35, 35, 255)'
-        secondaryColor='rgb(1, 1, 162)'
+        bgImage={Nat6}
+        imgGradientPrimary='#7ed56f80'
+        imgGradientSecondary='#28b48580'
+        primaryColor='#7ed56f'
+        secondaryColor='#28b485'
       />
       <TourCard
         days={5}
@@ -37,8 +46,11 @@ const Tours = () => {
         title1='the snow '
         title2='adventurer'
         price={897}
-        primaryColor='$color_orange_light'
-        secondaryColor='$color_orange_dark'
+        bgImage={Nat7}
+        imgGradientPrimary='#2d7dfe80'
+        imgGradientSecondary='#0049bf80'
+        primaryColor='#2323ff'
+        secondaryColor='#0101a2'
       />
     </div>
   );
