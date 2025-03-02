@@ -1,5 +1,5 @@
 import './index.scss';
-import HoverExpandButton from '../hoverexpandbutton';
+import { HoverExpandButtonWhite } from '../hoverexpandbutton';
 
 const TourCard = ({
   days = 1,
@@ -62,7 +62,7 @@ const TourCard = ({
           <span className='tour_card_side_back_price_text'>{`$ ${price}`}</span>
         </div>
         <div className='tour_card_side_back_button'>
-          <HoverExpandButton text='Book Now!' />
+          <HoverExpandButtonWhite text='Book Now!' />
         </div>
       </div>
     </div>

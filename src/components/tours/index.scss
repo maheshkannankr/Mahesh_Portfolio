@@ -1,11 +1,28 @@
 @use '../../app.scss' as *;
 .tours {
   height: 90vh;
-  padding: 25rem;
+  padding: 20rem 25rem 10rem;
   margin-top: -9rem;
   background-color: $color_grey_light1;
-  // background-color: red;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  &_heading {
+    flex: 0.1;
+    text-align: center;
+  }
+  &_cards {
+    // background-color: red;
+    flex: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &_button {
+    flex: 2;
+    // background-color: lightblue;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
 }
