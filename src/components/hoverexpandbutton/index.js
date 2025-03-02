@@ -1,7 +1,4 @@
-import './index.scss';
+import HoverExpandButtonWhite from './buttonWhite';
+import HoverExpandButtonGreen from './buttonGreen';
 
-const HoverExpandButton = ({ text = '' }) => {
-  return <label className='button_text'>{text}</label>;
-};
-
-export default HoverExpandButton;
+export { HoverExpandButtonWhite, HoverExpandButtonGreen };

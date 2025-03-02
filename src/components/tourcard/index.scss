@@ -1,5 +1,5 @@
-@use '../../app.scss' as *;
-
+// @use '../../app.scss' as *;
+@use '../../sass/abstracts/variables' as *;
 .tour_card {
   height: fit-content;
   width: 100%;
@@ -10,11 +10,10 @@
   justify-content: center;
 
   &_side {
-    background-color: $color_primary;
     position: absolute;
     height: 50rem;
     width: 30rem;
-    color: $color_grey_light1;
+    color: black;
     transition: all 1.5s ease;
     backface-visibility: hidden;
     box-shadow: 0 2rem 4rem rgba($color_grey_dark, 0.4);
@@ -22,40 +21,109 @@
     flex-direction: column;
     &_img {
       flex: 1;
-      background-color: $color_grey_dark;
+      background-image: linear-gradient(
+          to right bottom,
+          rgba(var(--top_color), 0.8),
+          rgba($color_teritary, 0.8)
+        ),
+        url('../../assets/images/nat-5.jpg');
+      background-size: cover;
+      background-position: top;
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+      position: relative;
+      &_title1 {
+        width: auto;
+        right: 1rem;
+        bottom: 5rem;
+        padding: 0 1rem;
+        text-align: right;
+        position: absolute;
+        color: $color_white;
+        text-transform: uppercase;
+        font-weight: 100;
+        letter-spacing: 0.25rem;
+      }
+      &_title2 {
+        letter-spacing: 0.25rem;
+        width: auto;
+        right: 1rem;
+        bottom: 2.5rem;
+        padding: 0 1rem;
+        text-align: right;
+        position: absolute;
+        color: $color_white;
+        text-transform: uppercase;
+        font-weight: 100;
+      }
     }
     &_details {
-
+      flex: 1;
+      padding: 0 4rem;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      &_label {
         flex: 1;
-        padding: 2rem;
+        width: 100%;
+        font-size: 1.6rem;
+        text-align: center;
         display: flex;
-        flex-direction: column;
-        background-color: $color_primary;
-        &_label{
-            flex: 1;
-            font-size: 1.6rem;
-            text-align: center;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid rgba($color_grey_dark, 0.2);
+        &:last-child {
+          border: 0;
         }
+      }
     }
 
     &-front {
-      color: #000;
+      color: $color_grey_dark;
       background-color: $color_white;
     }
 
-    &-back {
+    &_back {
       background-image: linear-gradient(
         to right bottom,
-        rgba($color_primary, 0.8),
-        rgba($color_teritary, 0.8)
+        rgba(blue, 0.8),
+        rgba(black, 0.8)
       );
       transform: rotateY(180deg);
+      display: flex;
+      flex-direction: column;
+      &_price {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &_only_text {
+          color: $color_white;
+          font-size: 2.6rem;
+          text-align: center;
+          display: block;
+          text-transform: uppercase;
+        }
+        &_text {
+          color: $color_white;
+          font-size: 5rem;
+          font-weight: 100;
+          text-align: center;
+          // font-family: ;
+        }
+      }
+      &_button {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+      }
     }
   }
   &:hover &_side-front {
     transform: rotateY(180deg);
   }
-  &:hover &_side-back {
+  &:hover &_side_back {
     transform: rotateY(360deg);
   }
 }

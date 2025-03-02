@@ -1,6 +1,6 @@
 import './index.scss';
 import logo from '../../assets/images/logo-white.png';
-import HoverExpandButton from '../hoverexpandbutton';
+import {HoverExpandButtonWhite} from '../hoverexpandbutton';
 const Header = () => {
   return (
     <header className='header'>
@@ -12,7 +12,7 @@ const Header = () => {
         <h1 className='header_heading_secondary_text'>
           {'is where life happens'}
         </h1>
-        <HoverExpandButton text='Discover our tours' />
+        <HoverExpandButtonWhite text='Discover our tours' />
       </div>
     </header>
   );
