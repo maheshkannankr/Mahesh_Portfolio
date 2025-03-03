@@ -1,0 +1,12 @@
+.testimonial {
+  &_image {
+    width: 15rem;
+    height: 15rem;
+    background-color: blueviolet;
+    float: left;
+    shape-outside: circle(50% at 50% 50%);
+  }
+
+  &_story {
+  }
+}

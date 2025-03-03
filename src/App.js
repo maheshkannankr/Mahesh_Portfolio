@@ -1,7 +1,7 @@
 import React from 'react';
 import './app.scss';
 
-import { Tours, About, Header, Feature } from './components';
+import { Tours, About, Header, Feature, StorySection } from './components';
 
 const App = () => {
   return (
@@ -10,6 +10,7 @@ const App = () => {
       <About />
       <Feature />
       <Tours />
+      <StorySection />
     </body>
   );
 };
