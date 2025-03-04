@@ -1,12 +1,32 @@
+@use '../../sass/abstracts/variables' as *;
+
 .testimonial {
+  width: 60rem;
+  padding: 5rem 2rem;
+  box-shadow: 0 1rem 4rem rgba($color_black, 0.2);
   &_image {
     width: 15rem;
     height: 15rem;
-    background-color: blueviolet;
+
     float: left;
     shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    &_img {
+      height: 100%;
+      max-width: 100%;
+    }
   }
 
   &_story {
+    padding: 0.5rem 2rem;
+
+    &_heading {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    &_words {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
   }
 }
