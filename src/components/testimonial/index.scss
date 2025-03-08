@@ -1,24 +1,58 @@
 @use '../../sass/abstracts/variables' as *;
 
 .testimonial {
-  width: 60rem;
-  padding: 5rem 2rem;
+  width: 90rem;
+  height: 15rem;
+  padding: 5rem;
+  transform: skewX(-12deg);
+  transition: all 0.2s ease;
+  background-color: rgba($color_white, 0.5);
   box-shadow: 0 1rem 4rem rgba($color_black, 0.2);
+
+  &:hover &_image_img {
+    transform: scale(1);
+    filter: blur(3px) brightness(80%);
+  }
+  &:hover &_image_caption {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+
   &_image {
     width: 15rem;
     height: 15rem;
-
     float: left;
-    shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(30% at 50% 55%);
     clip-path: circle(50% at 50% 50%);
+    transform: translateX(-5rem) skewX(12deg);
+    transition: all 2s ease;
+    position: relative;
+
     &_img {
       height: 100%;
-      max-width: 100%;
+      // width: 100%;
+      transform: scale(1.2);
+      transition: all 0.5s ease;
+    }
+    &_caption {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      opacity: 0;
+      font-weight: 600;
+      font-size: 1.6rem;
+      text-align: center;
+      text-transform: uppercase;
+      color: $color_grey_light1;
+      transition: all 0.5s ease;
+      // backface-visibility: hidden;
+      transform: translate(-50%, 20%);
     }
   }
 
   &_story {
     padding: 0.5rem 2rem;
+    transform: skewX(12deg);
 
     &_heading {
       font-size: 2rem;
