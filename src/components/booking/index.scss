@@ -30,12 +30,12 @@
 }
 
 .form {
-  padding: 2rem;
+  padding: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: stretch;
-  gap: 2rem;
+  gap: 1rem;
 
   &_input {
     width: 80%;

@@ -5,6 +5,7 @@ import {
   Tours,
   About,
   Header,
+  Footer,
   Feature,
   Booking,
   StorySection,
@@ -19,6 +20,7 @@ const App = () => {
       <Tours />
       <StorySection />
       <Booking />
+      <Footer />
     </body>
   );
 };
