@@ -8,12 +8,14 @@ import {
   Footer,
   Feature,
   Booking,
+  NavMenu,
   StorySection,
 } from './components';
 
 const App = () => {
   return (
     <body>
+      <NavMenu />
       <Header />
       <About />
       <Feature />

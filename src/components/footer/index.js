@@ -16,11 +16,16 @@ const Footer = () => {
           <li className='footer_details_links_item'>Terms</li>
         </ul>
         <p className='footer_details_copyright'>
-          Built by Mahesh Kannan for study purpose by refering Advanced CSS and
-          SASS by JONAS SCHMEDTMANN in Udemy, You are allowed to use this
-          webpage for both personal and commercial use, but not to claim it as
-          your own design, A credit to the original authour, Jonas Schmedtmann,
-          is of course always appreciated. Copyright &copy; by Mahesh Kannan
+          Built by
+          <span className='footer_details_copyright_highlight'>
+            &nbsp;<b>Mahesh Kannan</b>
+            &nbsp;
+          </span>
+          for study purpose by refering Advanced CSS and SASS by JONAS
+          SCHMEDTMANN in Udemy, You are allowed to use this webpage for both
+          personal and commercial use, but not to claim it as your own design, A
+          credit to the original authour, Jonas Schmedtmann, is of course always
+          appreciated. Copyright &copy; by Mahesh Kannan
         </p>
       </div>
     </footer>

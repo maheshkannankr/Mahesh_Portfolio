@@ -8,24 +8,31 @@
 
   .footer_logo {
     flex: 1;
+    padding: 2rem;
     margin: auto;
   }
 
   .footer_details {
     flex: 1;
     display: flex;
+    border-top: 1px solid $color_grey_dark;
     &_links {
       flex: 1;
       list-style: none;
       padding: 5rem;
-      font-size: 1.6rem;
+      font-size: 2rem;
       color: $color_grey_light1;
 
       &_item {
         display: inline-block;
         cursor: pointer;
+        transition: all 0.5s;
+        &:hover {
+          text-shadow: 0 8px 8px rgba($color_primary, 1);
+          transform: rotateZ(5deg) scale(1.2);
+        }
         &:not(:last-child) {
-          margin-right: 3rem;
+          margin-right: 4rem;
         }
       }
     }
@@ -33,8 +40,17 @@
       flex: 1;
       padding: 5rem;
       font-size: 1.6rem;
-      color: $color_grey_light1;
       letter-spacing: 0.15rem;
+      color: $color_grey_light1;
+      text-align: justify;
+      &_highlight {
+        display: inline-block;
+        transition: all 0.5s;
+        &:hover {
+          text-shadow: 0 4px 8px rgba($color_primary, 1);
+          transform: scale(1.2);
+        }
+      }
     }
   }
 }
