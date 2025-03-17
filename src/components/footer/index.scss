@@ -44,11 +44,11 @@
       color: $color_grey_light1;
       text-align: justify;
       &_highlight {
-        display: inline-block;
         transition: all 0.5s;
+        display: inline-block;
         &:hover {
           text-shadow: 0 4px 8px rgba($color_primary, 1);
-          transform: scale(1.2);
+          transform: scale(1.05);
         }
       }
     }

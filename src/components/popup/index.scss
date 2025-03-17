@@ -1,0 +1,31 @@
+@use '../../sass/abstracts/variables' as *;
+@use '../../sass/abstracts/mixins' as *;
+
+.popup {
+  top: 0;
+  left: 0;
+  z-index: 3000;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  box-sizing: border-box;
+  background-color: rgba($color_black, 0.9);
+
+  &_content {
+    @include centerTheElement;
+    height: 50rem;
+    width: 75%;
+    background-color: $color_white;
+    border-radius: 3px;
+    display: flex;
+  }
+  &_left {
+    flex: 1;
+    &_photo {
+      max-width: 100%;
+    }
+  }
+  &_right {
+    flex: 2;
+  }
+}

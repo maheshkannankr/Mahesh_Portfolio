@@ -4,6 +4,7 @@ import './app.scss';
 import {
   Tours,
   About,
+  Popup,
   Header,
   Footer,
   Feature,
@@ -23,6 +24,7 @@ const App = () => {
       <StorySection />
       <Booking />
       <Footer />
+      <Popup />
     </body>
   );
 };
