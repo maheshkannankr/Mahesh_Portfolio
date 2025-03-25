@@ -42,7 +42,7 @@ const About = () => {
   };
 
   return (
-    <section className='about u_flex_column'>
+    <section className='about u_flex_column' id='about'>
       <h2 className='about_heading u_secondary_heading'>
         {'Exciting Tours for Adventurous People'}
       </h2>

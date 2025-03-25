@@ -62,7 +62,7 @@ const TourCard = ({
           <span className='tour_card_side_back_price_text'>{`$ ${price}`}</span>
         </div>
         <div className='tour_card_side_back_button'>
-          <HoverExpandButtonWhite text='Book Now!' />
+          <HoverExpandButtonWhite text='Book Now!' link='#booking' />
         </div>
       </div>
     </div>

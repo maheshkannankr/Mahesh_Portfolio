@@ -9,7 +9,7 @@ const StorySection = () => {
   const mp4videoSrc = new URL('../../assets/images/video.mp4', import.meta.url)
     .href;
   return (
-    <div className='stories'>
+    <div className='stories' id='stories'>
       <video className='stories_bg_video' autoPlay muted loop>
         <source src={mp4videoSrc} type='video/mp4' />
         <source src='../../assets/images/video.webm' type='video/webm' />

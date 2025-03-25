@@ -10,10 +10,10 @@
   position: fixed;
   box-sizing: border-box;
   background-color: rgba($color_black, 0.9);
-
+/*   opacity: 0;
+  visibility: hidden; */
   &_content {
     @include centerTheElement;
-    height: 50rem;
     width: 75%;
     background-color: $color_white;
     border-radius: 3px;
@@ -21,11 +21,26 @@
   }
   &_left {
     flex: 1;
+    display: flex;
+    flex-direction: column;
     &_photo {
-      max-width: 100%;
+      width: 100%;
+      flex: 1;
     }
   }
   &_right {
     flex: 2;
+    padding: 3rem 5rem;
+
+    &_content {
+      column-gap: 4rem;
+      text-align: justify;
+      column-rule: 1px solid $color_grey_light2;
+      hyphens: auto;
+      font-size: 1.5rem;
+      column-count: 2;
+      color: $color_black;
+      margin: 4rem 0;
+    }
   }
 }

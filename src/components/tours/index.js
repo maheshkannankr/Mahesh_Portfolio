@@ -7,7 +7,7 @@ import { HoverExpandButtonGreen } from '../hoverexpandbutton';
 
 const Tours = () => {
   return (
-    <div className='tours'>
+    <div className='tours' id='tours'>
       <h1 className='tours_heading u_secondary_heading'>
         {'Most Popular Tours'}
       </h1>

@@ -11,31 +11,31 @@ const NavMenu = () => {
       <nav className='navigation_nav'>
         <ul className='navigation_nav_list'>
           <li className='navigation_nav_item'>
-            <a href='#' className='navigation_nav_item_link'>
+            <a href='#about' className='navigation_nav_item_link'>
               <span>01</span>
               About Natours
             </a>
           </li>
           <li className='navigation_nav_item'>
-            <a href='#' className='navigation_nav_item_link'>
+            <a href='#feature' className='navigation_nav_item_link'>
               <span>02</span>
               Your Benfits
             </a>
           </li>
           <li className='navigation_nav_item'>
-            <a href='#' className='navigation_nav_item_link'>
+            <a href='#tours' className='navigation_nav_item_link'>
               <span>03</span>
               Popular Tours
             </a>
           </li>
           <li className='navigation_nav_item'>
-            <a href='#' className='navigation_nav_item_link'>
+            <a href='#stories' className='navigation_nav_item_link'>
               <span>04</span>
               Stories
             </a>
           </li>
           <li className='navigation_nav_item'>
-            <a href='#' className='navigation_nav_item_link'>
+            <a href='#booking' className='navigation_nav_item_link'>
               <span>05</span>
               Book Now
             </a>

@@ -2,7 +2,7 @@ import './index.scss';
 
 const Booking = () => {
   return (
-    <div className='booking_section'>
+    <div className='booking_section' id='booking'>
       <div className='book'>
         <div className='book_form'>
           <h1 className='book_form_heading u_secondary_heading'>

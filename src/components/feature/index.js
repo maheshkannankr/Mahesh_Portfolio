@@ -15,7 +15,7 @@ const Feature = () => {
     );
   };
   return (
-    <div className='feature'>
+    <div className='feature' id='feature'>
       <div className='feature_main'>
         {featureCard({ Svg: Map, Heading: 'Find Your Way' })}
         {featureCard({ Svg: Compass, Heading: 'Meet Nature' })}
